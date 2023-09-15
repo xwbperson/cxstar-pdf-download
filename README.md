@@ -29,13 +29,12 @@ copy(document.cookie.match(/token=([^;]+)/)[1])
 ### 获取书籍id
 * PC网页
 
-    `https://www.cxstar.com/Book/Detail?ruid=29e2af210001a5XXXX&packageruid=` 中ruid对应的参数
-`29e2af210001a5XXXX` 就是书籍id
+    `https://www.cxstar.com/Book/Detail?ruid=29e2af210001a5XXXX&packageruid=`中ruid对应的参数`29e2af210001a5XXXX`就是书籍id
 
 
 * 手机网页
 
-    `https://m.cxstar.com/book/29e2af210001a5XXXX` 中 `29e2af210001a5XXXX` 就是书籍id
+    `https://m.cxstar.com/book/29e2af210001a5XXXX`中`29e2af210001a5XXXX`就是书籍id
 
 
 ## 使用方法
@@ -65,9 +64,7 @@ python main.py
 ## 注意
 * Authorization有效但是没有权限观看全书时，会下载试看部分的内容
 
-* 下载下来的文件都是虚大的，本人没有能力进行PDF优化，但是您可以通过 `Adobe Acrobat Pro`
-或者 `福昕高级PDF编辑器` 进行PDF压缩（PDF优化），您也可以通过其他类似工具进行压缩（优化），
-大约能达到很接近官方的文件大小，清晰度也几乎没有区别
+* 下载下来的文件都是虚大的，本人没有能力进行PDF优化，但是您可以通过`Adobe Acrobat Pro`或者`福昕高级PDF编辑器`进行PDF压缩（PDF优化），您也可以通过其他类似工具进行压缩（优化），大约能达到很接近官方的文件大小，清晰度也几乎没有区别
 
 * 建议不要特别下载次数特别频繁（一天10来本完全没问题）
 
