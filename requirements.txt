@@ -1,0 +1,5 @@
+requests~=2.31.0
+beautifulsoup4~=4.12.2
+pypdf~=3.16.0
+reportlab~=4.0.4
+Pillow~=10.0.0
