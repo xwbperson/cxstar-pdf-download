@@ -9,7 +9,7 @@
 
 <p align="center">
     <a href="https://github.com/52beijixing/cxstar-pdf-download">
-        <img src="./images/description.png" alt="screenshot">
+        <img src="./images/description.png" alt="description">
     </a>
 </p>
 
