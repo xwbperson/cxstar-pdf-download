@@ -117,7 +117,13 @@ def addBookMark(file_name, catalog):
             sub_children = bookdata2.get("children", [])
 
             for k in range(len(sub_children)):
-                pdf_writer.add_outline_item(sub_children[k]["title"], int(sub_children[k]["page"])-1, parent=bookmark2)
+                bookdata3 = sub_children[k]
+                bookmark3 = pdf_writer.add_outline_item(bookdata3["title"], int(bookdata3["page"]) - 1, parent=bookmark2)
+                grand_children = bookdata3.get("children", [])
+
+                for z in range(len(grand_children)):
+                    bookdata4 = grand_children[z]
+                    pdf_writer.add_outline_item(bookdata4["title"], int(bookdata4["page"]) - 1, parent=bookmark3)
 
     # 创建一个新的PDF文件并保存
     output_pdf_file = open(file_name, 'wb')
